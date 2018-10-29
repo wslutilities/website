@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html>
+<head>
+    <title>WSL Utilites</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function checkTime(i) {
+            return (i < 10) ? "0" + i : i;
+        }
+        function startTime() {
+            var today = new Date(),
+                h = checkTime(today.getHours()),
+                m = checkTime(today.getMinutes()),
+                s = checkTime(today.getSeconds());
+            document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+            t = setTimeout(function () {
+                startTime()
+            }, 500);
+        }
+        function site_init() {
+            startTime();
+        }
+    </script>
+</head>
+<body onload="site_init()">
+    <div id="container">
+        <div id="header">
+            <h3 style="display: inline;">
+                <span class="purple">#</span> <span class="blue"> user</span> @ <span class="green">wslu_site</span> in <span class="yellow">~</span> [<span id="time"></span>] <br />
+                <span class="red">$</span> <span class="green">feh</span> ~/logo.png<br/>
+                <img src="https://github.com/wslutilities/wslu/raw/master/extras/icon.png" height="80" alt="wslu logo"/>
+                
+            </h3>
+        </div>
+        <div id="links">
+            <div class="contentbox">
+                <h3><span class="red">$</span> <span class="green">less</span> wslu</h3>
+                <span class="less">WSL Utilites is a collection of utilities for Windows 10 Linux Subsystem, such as converting WSL path to Windows path or creating your favorite linux GUI application shortcuts on Windows 10 Desktop.<br/><span class="end">~/wslu (END)</span></span> 
+            </div>
+            <div class="contentbox">
+                <h3><span class="red">$</span> <span class="green">ls</span> projects</h3>
+                <a class="white" href="https://github.com/wslutilities/fake-wsl-env">fake-wsl-env</a>
+                <a class="red" href="https://github.com/wslutilities/wsl.js">wsl.js</a>
+                <a class="purple" href="https://github.com/wslutilities/wslutilities.github.io">wslu_site</a>
+                <a class="red" href="https://github.com/wslutilities/wsl.js">wslu-gui</a> 
+                <a class="cyan" href="https://github.com/wslutilities/wslu">wslu</a>
+                <a class="white" href="https://github.com/wslutilities/wslpy">wslpy</a>
+            </div>
+            <div class="contentbox">
+                <h3><span class="red">$</span> <span class="green">ls</span> social</h3>
+                <a class="cyan" href="https://github.com/wslutilities">github</a>
+                <a class="red" href="mailto:wslu@patrickwu.space">mail</a>
+                <a class="white" href="https://patrickwu.space">me</a>
+                <a class="cyan" href="https://twitter.com/wslutilities">twitter</a>       
+            </div>
+            <div class="contentbox">
+                <h3><span class="red">$</span> <span class="green">less</span> footer</h3>
+                <span class="less">Background by Tobias Oetiker on Unsplash. <br/><br/>Patrick Wu, Jinming@2017-2018, some rights reserved.<br/><span class="end">~/footer (END)</span></span> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
