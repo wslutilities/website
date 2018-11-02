@@ -16,7 +16,7 @@ function startTime() {
 function unix_prompt() {
     var unix_home = document.getElementsByClassName('unix_path');
     for (i = 0; i < unix_home.length; i++) {
-        unix_home[i].innerHTML = '<span class="blue">you</span>@<span class="green">wslu_site</span> <span class="red">$</span>';
+        unix_home[i].innerHTML = '<span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span>';
     }
 }
 
