@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # install
 # install script for wslu
 # <https://github.com/wslutilities/wslu>
