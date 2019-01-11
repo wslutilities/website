@@ -17,6 +17,16 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 BUILD_DIR=`mktemp --tmpdir --directory wslu-install.XXXX`
+distro="$(cat /etc/os-release | head -n1 | sed -e 's/NAME=\"//g')"
+case $distro in
+	*WLinux*|Ubuntu*|*Debian*|*Kali*) sudo apt install -y git;;
+	openSUSE*|SLES*) sudo zypper -n install git;;
+	Alpine*) sudo apk add git;;
+    Arch*) sudo pacman -Syyu git;;
+    Scientific*) sudo yum install -y git;;
+    *Fedora*) sudo dnf install -y git;;
+    *) exit 1;;
+esac
 git clone -b develop https://github.com/wslutilities/wslu $BUILD_DIR
 cd $BUILD_DIR
 bash configure.sh -i
