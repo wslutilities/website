@@ -28,7 +28,7 @@ case $distro in
     *Generic*) [ "fedora" == "$(cat /etc/os-release | grep -e "LIKE=" | sed -e 's/ID_LIKE=//g')" ] && sudo dnf install -y git || exit 1;;
     *) exit 1;;
 esac
-git clone -b develop https://github.com/wslutilities/wslu $BUILD_DIR
+git clone https://github.com/wslutilities/wslu $BUILD_DIR
 cd $BUILD_DIR
 bash configure.sh -i
 sudo install -m755 extras/scripts/wslu-uninstall /usr/bin
