@@ -1,0 +1,180 @@
+<!-- Creator     : groff version 1.22.3 -->
+<!-- CreationDate: Mon Mar  2 08:20:27 2020 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>WSLUPATH</title>
+
+</head>
+<body>
+
+<h1 align="center">WSLUPATH</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#COMMANDS">COMMANDS</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+<a href="#REPORTING BUGS">REPORTING BUGS</a><br>
+<a href="#COPYRIGHT">COPYRIGHT</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">wslupath(DEPRECATED)
+- Component of Windows 10 Linux Subsystem Utility</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>wslupath</b>
+[<b>-dOr</b>] [-D|-A|-T|-S|-W|-s|-su|-H|-P|...NAME...]</p>
+
+<p style="margin-left:11%; margin-top: 1em">0
+[-h|-v|-R]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This is a WSL
+Windows path Converter that can convert Windows path to
+other styles of path.</p>
+
+<h2>COMMANDS
+<a name="COMMANDS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>Output Type
+Options</b> <br>
+Without a type, it will detect path style automatically.
+<b><br>
+-O, --original</b></p>
+
+<p style="margin-left:22%;">print original (Windows) form
+of path(C:\Windows\System32)</p>
+
+<p style="margin-left:11%;"><b>-d, --doubledash-dir</b></p>
+
+<p style="margin-left:22%;">print Windows form of path with
+double backslash(C:\\Windows\\System32)</p>
+
+<p style="margin-left:11%;"><b>-r, --reg-data</b></p>
+
+<p style="margin-left:22%;">use the registry data to print
+path[wslpath -R to know more]</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>System Path
+<br>
+-D, --desktop</b> print desktop path and exit <b><br>
+-A, --appdata</b></p>
+
+<p style="margin-left:22%;">print AppData path(%APPDATA%)
+and exit</p>
+
+<p style="margin-left:11%;"><b>-T, --temp</b></p>
+
+<p style="margin-left:22%;">print temp path(%TMP%) and
+exit</p>
+
+<p style="margin-left:11%;"><b>-S, --sysdir</b></p>
+
+<p style="margin-left:22%;">print system path and exit</p>
+
+<p style="margin-left:11%;"><b>-W, --windir</b></p>
+
+<p style="margin-left:22%;">print Windows path and exit</p>
+
+<p style="margin-left:11%;"><b>-s, --start-menu</b></p>
+
+<p style="margin-left:22%;">print Start Menu path and
+exit</p>
+
+<p style="margin-left:11%;"><b>-su, --startup</b></p>
+
+<p style="margin-left:22%;">print Startup path and exit</p>
+
+<p style="margin-left:11%;"><b>-H, --home</b></p>
+
+<p style="margin-left:22%;">print user home path
+(%HOMEPATH%) and exit</p>
+
+<p style="margin-left:11%;"><b>-P, --program-files</b></p>
+
+<p style="margin-left:22%;">print Program Files path
+(%ProgramFiles%) and exit</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>Other
+Options <br>
+-h, --help</b></p>
+
+<p style="margin-left:22%;">print a simple help</p>
+
+<p style="margin-left:11%;"><b>-v, --version</b></p>
+
+<p style="margin-left:22%;">print current version</p>
+
+<p style="margin-left:11%;"><b>-R, --avail-reg</b></p>
+
+<p style="margin-left:22%;">print available registry
+input</p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Created by
+Patrick Wu &lt;me@patrickwu.space&gt;</p>
+
+<h2>REPORTING BUGS
+<a name="REPORTING BUGS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Report bugs to
+&lt;https://github.com/wslutilities/wslu/issues&gt;</p>
+
+<h2>COPYRIGHT
+<a name="COPYRIGHT"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This is free
+software; you can redistribute it and/or modify it under the
+terms of the GNU GPL version 3 or (at your option) any later
+version. There is NO warranty; not even MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">wslvar(1),
+wslu(7)</p>
+<hr>
+</body>
+</html>
