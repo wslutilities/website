@@ -13,21 +13,26 @@
 
 <body onload="site_init()">
     <div id="container">
-    <div class="ui-titlebar">
-	<!--<div class="ui-titleicon"></div>-->
-	<div class="ui-titletext">Command Prompt</div>
-	<div class="ui-titlecontrols">
-		<button class="ui-btn minimize">
-			<svg x="0px" y="0px" viewBox="0 0 10.2 1"><rect x="0" y="50%" width="10.2" height="1" /></svg>
-		</button><button class="ui-btn maximize">
-			<svg viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z" /></svg>
-		</button><button class="ui-btn close">
-			<svg viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1" /></svg>
-		</button>
-	</div>
-</div>
+        <div class="ui-titlebar">
+            <!--<div class="ui-titleicon"></div>-->
+            <div class="ui-titletext">Command Prompt</div>
+            <div class="ui-titlecontrols">
+                <button class="ui-btn minimize">
+                    <svg x="0px" y="0px" viewBox="0 0 10.2 1">
+                        <rect x="0" y="50%" width="10.2" height="1" /></svg>
+                </button><button class="ui-btn maximize">
+                    <svg viewBox="0 0 10 10">
+                        <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z" /></svg>
+                </button><button class="ui-btn close">
+                    <svg viewBox="0 0 10 10">
+                        <polygon
+                            points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1" />
+                        </svg>
+                </button>
+            </div>
+        </div>
 
-<!--
+        <!--
 Unmaximize/restore
 <svg viewBox="0 0 10.2 10.1"><path d="M2.1,0v2H0v8.1h8.2v-2h2V0H2.1z M7.2,9.2H1.1V3h6.1V9.2z M9.2,7.1h-1V2H3.1V1h6.1V7.1z" /></svg>
 -->
@@ -36,41 +41,70 @@ Unmaximize/restore
             (c) 2020 Microsoft Corporation. All rights reserved.<br /><br />
             C:\Users\you> wsl<br />
             <span class="unix_path"></span>
-            <span class="green">date</span> +%H:%M:%S<br />
+            <span class="green">date</span> +%H:%M:%S
+            <br />
             <span id="time"></span><br />
             <span class="unix_path"></span>
-            <span class="green">cd</span> /data/sites/wslu<br />
+            <span class="green">cd</span> /data/sites/wslu
+            <br />
             <span class="unix_path"></span>
-            <span class="green">pwd</span><br />
+            <span class="green">pwd</span>
+            <br />
             /data/sites/wslu<br />
             <span class="unix_path"></span>
-            <span class="green">feh</span> logo.png<br />
-            <img src="https://github.com/wslutilities/wslu/raw/master/extras/icon.png" height="80" alt="wslu logo" /><br />
+            <span class="green">feh</span> logo.png
+            <br />
+            <img src="https://github.com/wslutilities/wslu/raw/master/extras/icon.png" height="80" alt="wslu logo" />
+            <br />
             <span class="unix_path"></span>
-            <span class="green">cat</span> intro<br />
-            WSL Utilites is a collection of utilities for Windows 10 Linux Subsystem that help you get things done easily on WSL.<br />
+            <span class="green">cat</span> ./README
+            <br />
+            <h4># WSL Utilities</h4>
+            **<b>WSL Utilites</b>** is a collection of utilities for Windows 10 Linux Subsystem that help you
+            get things done easily on WSL.
+            <br /><br />
+            * GitHub: <<a class="white" href="https://github.com/wslutilities">https://github.com/wslutilities</a>><br />
+            * Email: contact@wslutiliti.es<br />
+            * Twitter: <<a class="white" href="https://twitter.com/wslutilities">https://twitter.com/wslutilities</a>><br />
+            * IRC: #wslu on freenode<br />
+            * OpenCollective: <<a class="white" href="https://opencollective.com/wslu">https://opencollective.com/wslu</a>><br />
+            * Package Cloud: <<a class="white" href="https://packagecloud.io/whitewaterfoundry/wslu">https://packagecloud.io/whitewaterfoundry/wslu</a>>
+            <br /><br />
             <span class="unix_path"></span>
-            <span class="green">ls</span> projects<br />
-            <a class="white" href="https://github.com/wslutilities/fake-wsl-env">fake-wsl-env</a>
-            <a class="purple" href="#">wslu-gui</a>
-            <a class="purple" href="https://github.com/wslutilities/wslutilities.github.io">wslu_site</a>
-            <a class="cyan" href="https://github.com/wslutilities/wslu">wslu</a>
-            <a class="white" href="https://github.com/wslutilities/wslpy">wslpy</a><br />
+            <span class="green">cat</span> ./projects/wslu.md<br />
+            <h5>## wslu</h5>
+            <a class="cyan" href="/wslu">[Wiki](/wslu)</a> <a class="cyan"
+                href="https://github.com/wslutilities/wslu">[GitHub](https://github.com/wslutilities/wslu)</a>
+            <br /><br />
+            **<b>wslu</b>** is a collection of utilities for Windows 10 Linux Subsystem, such as retriving
+            Windows environment variables or creating your favorite linux GUI application shortcuts on Windows 10
+            Desktop.
+            <br /><br />* Requires Windows 10 Creators Update.<br />* Some of the feature requires higher version of
+            Windows 10.<br />* Supports WSL2.
+            <br /><br />
             <span class="unix_path"></span>
-            <span class="green">ls</span> social<br />
-            <a class="white" href="https://github.com/wslutilities">github</a>
-            <a class="red" href="mailto:contact@wslutiliti.es">mail</a>
-            <a class="white" href="https://opencollective.com/wslu">opencollect</a>
-            <a class="white" href="https://packagecloud.io/whitewaterfoundry/wslu">packagecloud</a>
-            <a class="white" href="https://twitter.com/wslutilities">twitter</a><br />
+            <span class="green">cat</span> ./projects/wslpy.md<br />
+            <h5>## wslpy</h5>
+            <a class="red" href="#">[Wiki]()</a> <a class="cyan"
+                href="https://github.com/wslutilities/wslpy">[GitHub](https://github.com/wslutilities/wslpy)</a>
+            <br /><br />
+            <span class="gray">&nbsp;&nbsp;> wslpy is still in development. the funcion calls will change frequently.</span>
+            <br /><br />
+            This is a Python3 library for WSL specific tasks, and you can use it to do something amazing on
+            Python.
+            <br /><br />* Requires Python 3.
+            <br /><br />
             <span class="unix_path"></span>
-            <span class="green">cat</span> footer<br />
-            Logo of WSL Utilities is licensed under a <a class="white" href="http://creativecommons.org/licenses/by-nc/4.0/">CC
+            <span class="green">cat</span> ./footer<br />
+            Logo of WSL Utilities is licensed under a <a class="white"
+                href="http://creativecommons.org/licenses/by-nc/4.0/">CC
                 BY-NC 4.0 International License</a>.<br />
-            Background by <a class="white" href="https://unsplash.com/@oetiker">Tobias Oetiker</a> on <a class="white"
-                href="https://unsplash.com/">Unsplash</a>. <br /><br /><span class="copyleft">&copy;</span> 2017-2020 <a
-                        class="white" href="https://wslutilities.github.io">WSL Utilites</a>, some rights reserved.<br />&copy;
-                    2007-2020 <a class="white" href="https://patrickwu.space">Patrick Wu</a>, some rights reserved.<br />
+            Background by <a class="white" href="https://unsplash.com/@oetiker">Tobias Oetiker</a> on <a
+                class="white" href="https://unsplash.com/">Unsplash</a>. <br /><br /><span
+                class="copyleft">&copy;</span> 2017-2020 <a class="white"
+                href="https://wslutilities.github.io">WSL Utilites</a>, some rights reserved.<br />&copy;
+            2007-2020 <a class="white" href="https://patrickwu.space">Patrick Wu</a>, some rights
+            reserved.<br />
         </div>
     </div>
 </body>
