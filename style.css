@@ -2,7 +2,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url("bg.jpg");
+	background-image: url("https://cdn.patrickwu.space/base/wsl-bg.jpeg");
 	background-color: #141516;
 	background-size: cover;
 	background-position: center;
