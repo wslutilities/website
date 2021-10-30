@@ -10,25 +10,29 @@
     <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
 
-<!-- Start Open Web Analytics Tracker -->
-<script type="text/javascript">
-//<![CDATA[
-var owa_baseUrl = 'https://api.patrickwu.space/analytics/';
-var owa_cmds = owa_cmds || [];
-owa_cmds.push(['setSiteId', 'f6eb61f8cd9b98df3e79264dbbe9c726']);
-owa_cmds.push(['trackPageView']);
-owa_cmds.push(['trackClicks']);
-owa_cmds.push(['trackDomStream']);
+    <!-- Start Open Web Analytics Tracker -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var owa_baseUrl = 'https://api.patrickwu.space/analytics/';
+        var owa_cmds = owa_cmds || [];
+        owa_cmds.push(['setSiteId', 'f6eb61f8cd9b98df3e79264dbbe9c726']);
+        owa_cmds.push(['trackPageView']);
+        owa_cmds.push(['trackClicks']);
+        owa_cmds.push(['trackDomStream']);
 
-(function() {
-    var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-    owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-    _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
-    var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-}());
-//]]>
-</script>
-<!-- End Open Web Analytics Code --> 
+        (function () {
+            var _owa = document.createElement('script');
+            _owa.type = 'text/javascript';
+            _owa.async = true;
+            owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(
+                /http:/, 'https:') : owa_baseUrl);
+            _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+            var _owa_s = document.getElementsByTagName('script')[0];
+            _owa_s.parentNode.insertBefore(_owa, _owa_s);
+        }());
+        //]]>
+    </script>
+    <!-- End Open Web Analytics Code -->
 </head>
 
 <body onload="site_init()">
@@ -47,7 +51,7 @@ owa_cmds.push(['trackDomStream']);
                     <svg viewBox="0 0 10 10">
                         <polygon
                             points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1" />
-                        </svg>
+                    </svg>
                 </button>
             </div>
         </div>
@@ -93,9 +97,8 @@ Unmaximize/restore
             <span class="unix_path"></span>
             <span class="green">cat</span> ./projects/wslu.md<br />
             <h5>## wslu</h5>
-            <a class="cyan" href="/wslu">Wiki</a> <a class="cyan"
-                href="https://github.com/wslutilities/wslu">GitHub</a> <a class="cyan"
-                href="https://gitlab.com/wslutilities/wslu">GitLab</a> <a class="cyan"
+            <a class="cyan" href="/wslu">Wiki</a> <a class="cyan" href="https://github.com/wslutilities/wslu">GitHub</a>
+            <a class="cyan" href="https://gitlab.com/wslutilities/wslu">GitLab</a> <a class="cyan"
                 href="https://launchpad.net/wslu">Launchpad</a> <a class="cyan"
                 href="https://gitee.com/mirrors/wslu">Gitee</a>
             <br /><br />
@@ -112,7 +115,8 @@ Unmaximize/restore
                 href="https://github.com/wslutilities/wslpy">GitHub</a> <a class="cyan"
                 href="https://gitlab.com/wslutilities/wslpy">GitLab</a>
             <br /><br />
-            <span class="gray">&nbsp;&nbsp;> wslpy is still in development. the funcion calls will change frequently.</span>
+            <span class="gray">&nbsp;&nbsp;> wslpy is still in development. the funcion calls will change
+                frequently.</span>
             <br /><br />
             This is a Python3 library for WSL specific tasks, and you can use it to do something amazing on
             Python.
@@ -123,10 +127,9 @@ Unmaximize/restore
             Logo of WSL Utilities is licensed under a <a class="white"
                 href="http://creativecommons.org/licenses/by-nc/4.0/">CC
                 BY-NC 4.0 International License</a>.<br />
-            Background by <a class="white" href="https://unsplash.com/@callmepk">me</a> on <a
-                class="white" href="https://unsplash.com/">Unsplash</a>. <br /><br /><span
-                class="copyleft">&copy;</span> 2017-2021 <a class="white"
-                href="https://wslutiliti.es/">WSL Utilites</a>, some rights reserved.<br />&copy;
+            Background by <a class="white" href="https://unsplash.com/@callmepk">me</a> on <a class="white"
+                href="https://unsplash.com/">Unsplash</a>. <br /><br /><span class="copyleft">&copy;</span> 2017-2021 <a
+                class="white" href="https://wslutiliti.es/">WSL Utilites</a>, some rights reserved.<br />&copy;
             2007-2021 <a class="white" href="https://patrickwu.space">Patrick Wu</a>, some rights
             reserved.<br />
         </div>
