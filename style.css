@@ -15,6 +15,7 @@ body {
 }
 
 #container {
+	border-radius: 10px;
 	margin: 40px auto;
 	-webkit-box-shadow: 1px 1px 20px 0px #000;
 	-moz-box-shadow: 1px 1px 20px 0px #000;
@@ -23,6 +24,8 @@ body {
 }
 
 #content {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 	opacity: 0.9;
 	background-color: #282a36;
 	padding: 8px;
@@ -88,6 +91,7 @@ a:hover {
 @media screen and (max-width: 800px) {
 
 	#container {
+		border-radius: 10px;
 		margin: 10px;
 		height: auto;
 		-webkit-box-shadow: 0 0 0 0 #000;
@@ -96,12 +100,16 @@ a:hover {
 	}
 
 	#content {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
 		opacity: 0.9;
 		padding: 8px;
 	}
 }
 
 .ui-titlebar {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	display: flex;
 	height: 32px;
 	background: #000;
