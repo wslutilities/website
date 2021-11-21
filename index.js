@@ -23,4 +23,10 @@ function unix_prompt() {
 function site_init() {
     startTime();
     unix_prompt();
+
+    $(".select-wslpy-doc").load("twslpy/dir.txt");
 }
+
+$('.select-wslpy-doc').on('change',function(){
+    location.href = $(this).val();
+    });
