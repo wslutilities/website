@@ -19,6 +19,12 @@ function unix_prompt() {
         unix_home[i].innerHTML = '<span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span>';
     }
 }
+function nav_on_change() {
+    var value = document.querySelector(".select-wslpy-doc").value;
+    if (value != "") {
+        location.href = value;
+    }
+}
 
 function site_init() {
     startTime();
@@ -26,11 +32,4 @@ function site_init() {
 
     var d = document.querySelector(".select-wslpy-doc");
     fetch("wslpy/dir.txt").then(response => response.text()).then(text => d.innerHTML = text);
-
-    d.on('change',function(){
-        var value = $(this).val()
-        if (value != "") {
-            location.href = value;
-        }
-        });
 }
