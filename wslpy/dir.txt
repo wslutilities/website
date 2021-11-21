@@ -1,3 +1,4 @@
-<option value="wslpy/0.0.13/" >0.0.13</option>
-<option value="wslpy/0.0.14/" >0.0.14</option>
-<option value="wslpy/current/" selected>current</option>
+<option value="" selected disabled hidden>-</option>
+<option value="wslpy/0.0.13/">0.0.13</option>
+<option value="wslpy/0.0.14/">0.0.14</option>
+<option value="wslpy/current/">current</option>

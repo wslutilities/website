@@ -27,7 +27,10 @@ function site_init() {
     var d = document.querySelector(".select-wslpy-doc");
     fetch("wslpy/dir.txt").then(response => response.text()).then(text => d.innerHTML = text);
 
-    document.querySelector(".select-wslpy-doc").on('change',function(){
-        location.href = $(this).val();
+    d.on('change',function(){
+        var value = $(this).val()
+        if (value != "") {
+            location.href = value;
+        }
         });
 }
