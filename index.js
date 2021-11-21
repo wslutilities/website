@@ -24,9 +24,10 @@ function site_init() {
     startTime();
     unix_prompt();
 
-    $(".select-wslpy-doc").load("twslpy/dir.txt");
-}
+    var d = document.querySelector(".select-wslpy-doc");
+    fetch("wslpy/dir.txt").then(response => response.text()).then(text => d.innerHTML = text);
 
-$('.select-wslpy-doc').on('change',function(){
-    location.href = $(this).val();
-    });
+    document.querySelector(".select-wslpy-doc").on('change',function(){
+        location.href = $(this).val();
+        });
+}
