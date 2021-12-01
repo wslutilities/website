@@ -2,12 +2,12 @@
 
 a:link {
     text-decoration: underline;
-    color: #555;
+    color: white;
   }
   
   a:visited {
     text-decoration: none;
-    color: #777;
+    color: #888;
   }
   
   a:hover,
