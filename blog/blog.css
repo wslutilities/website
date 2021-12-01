@@ -1,0 +1,132 @@
+/* link extension */
+
+a:link {
+    text-decoration: underline;
+    color: #555;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #777;
+  }
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+    color: #77beec;
+  }
+  
+  /* general extension */
+  
+  img {
+    outline: none;
+    border: none;
+    max-width: 100%;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  blockquote {
+    border-left-width: 2px;
+    border-left-color: white;
+    border-left-style: solid;
+    padding: 0 10px 0;
+  }
+  /* code block extension */
+  pre {
+    font: 0.8em/1.0em "CascadiaCPL", "Courier New", Courier;
+    color: #222;
+  }
+  
+  code {
+    font: "CascadiaCPL", "Courier New", Courier;
+    color: #AAA;
+    background: #444;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 16px;
+  }
+  
+  .highlight {
+    border-color: #555;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 5px;
+    overflow: auto;
+    background: #DDD;
+  }
+  
+  .highlight .gutter {
+    border-right-color: #555;
+    border-right-style: solid;
+    border-right-width: 0.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+  }
+  
+  .highlight .code {
+    width: 100%;
+    padding-left: 10px;
+  }
+  
+  .highlight figcaption {
+    border-bottom-color: #555;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+  }
+  
+  .highlight figcaption span {
+    margin: 5px;
+  }
+  
+  /* scrollbar extension */
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+  }
+  
+  ::-webkit-scrollbar-button {
+    width: 0;
+    height: 0
+  }
+  
+  ::-webkit-scrollbar-button:end:decrement,
+  ::-webkit-scrollbar-button:start:increment {
+    display: none
+  }
+  
+  ::-webkit-scrollbar-corner {
+    display: block
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .2)
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .5)
+  }
+  
+  ::-webkit-scrollbar-track:hover {
+    background-color: rgba(0, 0, 0, .15)
+  }
+  
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-track {
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+  }
+  
+  
+  
+  ::-webkit-scrollbar-button:end,
+  ::-webkit-scrollbar-button:start {
+    width: 10px;
+    height: 10px
+  }
