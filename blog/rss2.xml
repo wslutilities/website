@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WSL Utilities</title>
+    <link>https://wslutiliti.es/blog/</link>
+    
+    <image>
+      <url>https://github.com/wslutilities/wslu/raw/master/extras/icon.png</url>
+      <title>WSL Utilities</title>
+      <link>https://wslutiliti.es/blog/</link>
+    </image>
+    
+    <atom:link href="https://wslutiliti.es/blog/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Thu, 02 Dec 2021 07:34:24 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Arch Linux package server now available!</title>
+      <link>https://wslutiliti.es/blog/2021/12/01/brand-new-arch-linux-server/</link>
+      <guid>https://wslutiliti.es/blog/2021/12/01/brand-new-arch-linux-server/</guid>
+      <pubDate>Wed, 01 Dec 2021 16:40:32 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;Last year, &lt;code&gt;wslu&lt;/code&gt; got removed from AUR due to violating its policies(&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      
+      <comments>https://wslutiliti.es/blog/2021/12/01/brand-new-arch-linux-server/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>New blog for WSL Utilities</title>
+      <link>https://wslutiliti.es/blog/2021/12/01/new-blog-for-wslutilities/</link>
+      <guid>https://wslutiliti.es/blog/2021/12/01/new-blog-for-wslutilities/</guid>
+      <pubDate>Wed, 01 Dec 2021 16:31:50 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;&lt;strong&gt;We now have a official blog!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Before today, most of the updates for WSL Utilities are posted on Twitter. I</description>
+          
+        
+      
+      
+      
+      
+      
+      
+      <comments>https://wslutiliti.es/blog/2021/12/01/new-blog-for-wslutilities/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
