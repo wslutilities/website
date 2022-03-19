@@ -8,10 +8,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@wslutilities" />
   <meta name="twitter:creator" content="@wslutilities" />
-  <meta property="og:url" content="https://wslutiliti.es/blog/2021/12/01/brand-new-arch-linux-server/" />
-  <meta property="og:title" content="Arch Linux Package Server Now Available! | WSL Utilities" />
+  <meta property="og:url" content="https://wslutiliti.es/blog/archives/2022/03/index.html" />
+  <meta property="og:title" content="Archives | WSL Utilities" />
   <meta property="og:image" content="https://cdn.patrickwu.space/base/wsl.png" />
-  <title> Arch Linux Package Server Now Available! | WSL Utilities </title>
+  <title> Archives | WSL Utilities </title>
 
 
   <link rel="icon" type="image/png" href="https://github.com/wslutilities/wslu/raw/master/extras/icon.png" />
@@ -86,9 +86,7 @@
             </div>
         </div>
         <div id="content">
-            <article class="post">
-	
-<div>
+            <div>
 	Microsoft Windows [<span alt="For unknown reasons, Windows 11 is still Version 10 lol">Version
 		10.0.xxxxx.xxxx</span>]<br />
 	(c) 2021 Microsoft Corporation. All rights reserved.<br /><br />
@@ -101,61 +99,29 @@
 	<br />
 	/data/sites/wslu<br />
 	<span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span>
-    <span class="green">cat</span> ./blog/2021/12/01/brand-new-arch-linux-server.md 
-	<h1>Arch Linux package server now available!</h1>
-
-	---<br />
-	date: Dec 01, 2021<br />
-	---
-</div>
-	<div>
-		
-			<p>Last year, <code>wslu</code> got removed from AUR due to violating its policies(<a target="_blank" rel="noopener" href="https://lists.archlinux.org/pipermail/aur-requests/2020-September/044992.html">original notice</a>):</p>
-<blockquote>
-<p>The AUR does not permit upload of packages ?which are intended for a non-Arch distribution, and are not useful, or don’t work, on Arch.</p>
-<p>AUR packages must be written with the intention of working and achieving their purpose, at a minimum, on archlinux x86_64 (but may optionally support additional targets, e.g. ARM support is popular, Manjaro users often upload manjaro themes that can be equally used on Arch, users of parabola or artix upload openrc&#x2F;runit based packages which can be used to install the official Arch installation media, then build your own alternative init system and replace systemd, thus being functional and useful on archlinux).</p>
-</blockquote>
-<p>Basically it means due to there is no official support for Arch Linux on WSL, <code>wslu</code> will not allowed in the AUR.</p>
-<p>But now I got good news!</p>
-<p>We now have a dedicated server for Arch Linux for you! You can add the repository using the following method:</p>
-<ol>
-<li>If not done so, initial <code>pacman-key</code> with <code>pacman-key --init</code>;</li>
-<li>add the WSL Public Signing Key to <code>pacman</code> from the keyserver from keyserver using <code>pacman-key -r A2861ABFD897DD37</code> or download from our website and import the key:<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://pkg.wslutiliti.es/public.key</span><br><span class="line">pacman-key --add public.key</span><br></pre></td></tr></table></figure></li>
-<li>Locally sign the key with <code>pacman-key --lsign-key A2861ABFD897DD37</code>;</li>
-<li>add the following content in your <code>/etc/pacman.conf</code>:<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[wslutilities]</span><br><span class="line">Server = https://pkg.wslutiliti.es/arch/</span><br></pre></td></tr></table></figure></li>
-<li>Now update the repository and now you can directly download <code>wslu</code>!</li>
-</ol>
-<p>If there is any issue with the repository, don’t hesitate to report to <a target="_blank" rel="noopener" href="https://github.com/wslutilities/wslu/issues">https://github.com/wslutilities/wslu/issues</a>.</p>
-
-		
-	</div>
+	<span class="green">cat</span> ./blog/README
+	<h1>WSL Utilities Blog</h1>
+	<a href="https://wslutiliti.es/blog/atom.xml">RSS (Atom)</a> <a href="https://wslutiliti.es/blog/rss2.xml">RSS
+		(RSS2)</a> <br /><br />
 	<span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span>
-<span class="green">cat</span> ./blog/_Navigation
+	<span class="green">ls</span> -g --time-style=+"%Y %b %d" ./blog/archives/2022/03/
+	<br /><br />
+	
+	-rw-r--r-- 1 patrick -- <time>2022 Mar 19</time>
+	<a class="white" href="/blog/2022/03/19/release-wslu-3-2-4/">wslu 3.2.4 LTS (finally) released!</a>
+	</span><br />
+	
+	<br/>
+	<span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span>
+<span class="green">cat</span> ./blog/_Paginator
+<br /><br />
+
+There is only one page, so no paginator ¯\_(ツ)_/¯
+
+
+<br/><br/>
+</div>
 <br />
-
-<nav>
-  
-  <div>
-    Next Post:
-    
-    <a class="white" href="/blog/2022/03/19/release-wslu-3-2-4/">
-      wslu 3.2.4 LTS (finally) released!
-    </a>
-  </div>
-  
-  
-  <div>
-      Previous Post:
-      
-      <a class="white" href="/blog/2021/12/01/new-blog-for-wslutilities/">
-        New blog for WSL Utilities
-      </a>
-  </div>
-  
-</nav>
-
-<br/>
-</article>
         
 <span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span><span class="green">cat</span> ./footer<br />
 Souce code of this website is available on <a class="white"

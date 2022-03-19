@@ -15,8 +15,31 @@
     <atom:link href="https://wslutiliti.es/blog/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 17 Mar 2022 02:17:57 GMT</pubDate>
+    <pubDate>Sat, 19 Mar 2022 09:04:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>wslu 3.2.4 LTS (finally) released!</title>
+      <link>https://wslutiliti.es/blog/2022/03/19/release-wslu-3-2-4/</link>
+      <guid>https://wslutiliti.es/blog/2022/03/19/release-wslu-3-2-4/</guid>
+      <pubDate>Sat, 19 Mar 2022 17:01:21 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;This is a update that people have been waiting for a really long time… it packs a lot of important fixes for the issues that people have</description>
+          
+        
+      
+      
+      
+      
+      
+      
+      <comments>https://wslutiliti.es/blog/2022/03/19/release-wslu-3-2-4/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Arch Linux package server now available!</title>
