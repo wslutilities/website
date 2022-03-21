@@ -8,10 +8,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@wslutilities" />
   <meta name="twitter:creator" content="@wslutilities" />
-  <meta property="og:url" content="https://wslutiliti.es/blog/archives/index.html" />
-  <meta property="og:title" content="Archives | WSL Utilities" />
+  <meta property="og:url" content="https://wslutiliti.es/blog/2022/03/21/wslu-canary-copr/" />
+  <meta property="og:title" content="Wslu Canary Build Now Availbale for COPR | WSL Utilities" />
   <meta property="og:image" content="https://cdn.patrickwu.space/base/wsl.png" />
-  <title> Archives | WSL Utilities </title>
+  <title> Wslu Canary Build Now Availbale for COPR | WSL Utilities </title>
 
 
   <link rel="icon" type="image/png" href="https://github.com/wslutilities/wslu/raw/master/extras/icon.png" />
@@ -86,7 +86,9 @@
             </div>
         </div>
         <div id="content">
-            <div>
+            <article class="post">
+	
+<div>
 	Microsoft Windows [<span alt="For unknown reasons, Windows 11 is still Version 10 lol">Version
 		10.0.xxxxx.xxxx</span>]<br />
 	(c) 2021 Microsoft Corporation. All rights reserved.<br /><br />
@@ -99,41 +101,42 @@
 	<br />
 	/data/sites/wslu<br />
 	<span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span>
-	<span class="green">cat</span> ./blog/README
-	<h1>WSL Utilities Blog</h1>
-	<a href="https://wslutiliti.es/blog/atom.xml">RSS (Atom)</a> <a href="https://wslutiliti.es/blog/rss2.xml">RSS
-		(RSS2)</a> <br /><br />
-	<span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span>
-	<span class="green">ls</span> -g --time-style=+"%Y %b %d" ./blog/archives/
-	<br /><br />
-	
-	-rw-r--r-- 1 patrick -- <time>2022 Mar 21</time>
-	<a class="white" href="/blog/2022/03/21/wslu-canary-copr/">wslu Canary Build now availbale for COPR</a>
-	</span><br />
-	
-	-rw-r--r-- 1 patrick -- <time>2022 Mar 19</time>
-	<a class="white" href="/blog/2022/03/19/release-wslu-3-2-4/">wslu 3.2.4 LTS (finally) released!</a>
-	</span><br />
-	
-	-rw-r--r-- 1 patrick -- <time>2021 Dec 01</time>
-	<a class="white" href="/blog/2021/12/01/brand-new-arch-linux-server/">Arch Linux package server now available!</a>
-	</span><br />
-	
-	-rw-r--r-- 1 patrick -- <time>2021 Dec 01</time>
-	<a class="white" href="/blog/2021/12/01/new-blog-for-wslutilities/">New blog for WSL Utilities</a>
-	</span><br />
-	
-	<br/>
-	<span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span>
-<span class="green">cat</span> ./blog/_Paginator
-<br /><br />
+    <span class="green">cat</span> ./blog/2022/03/21/wslu-canary-copr.md 
+	<h1>wslu Canary Build now availbale for COPR</h1>
 
-There is only one page, so no paginator ¯\_(ツ)_/¯
-
-
-<br/><br/>
+	---<br />
+	date: Mar 21, 2022<br />
+	---
 </div>
+	<div>
+		
+			<p>After several tests, as part of the CI&#x2F;CD package deployment experiments, wslu Canary Build is now available for COPR!</p>
+<p>you can install canary builds using the following commnads:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf copr enable wslutilities/wslu-canary</span><br><span class="line">sudo dnf install wslu</span><br></pre></td></tr></table></figure>
+
+<p>Since it is a development build version, there will definitely be bugs. Please don’t hesitate to report to <a target="_blank" rel="noopener" href="https://github.com/wslutilities/wslu/issues">https://github.com/wslutilities/wslu/issues</a>.</p>
+
+		
+	</div>
+	<span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span>
+<span class="green">cat</span> ./blog/_Navigation
 <br />
+
+<nav>
+  
+  
+  <div>
+      Previous Post:
+      
+      <a class="white" href="/blog/2022/03/19/release-wslu-3-2-4/">
+        wslu 3.2.4 LTS (finally) released!
+      </a>
+  </div>
+  
+</nav>
+
+<br/>
+</article>
         
 <span class="blue">you</span>@<span class="green">wslu_site</span><span class="red">$</span><span class="green">cat</span> ./footer<br />
 Souce code of this website is available on <a class="white"

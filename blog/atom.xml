@@ -6,7 +6,7 @@
   <link href="https://wslutiliti.es/blog/atom.xml" rel="self"/>
   
   <link href="https://wslutiliti.es/blog/"/>
-  <updated>2022-03-19T09:04:49.643Z</updated>
+  <updated>2022-03-21T07:03:35.608Z</updated>
   <id>https://wslutiliti.es/blog/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>wslu Canary Build now availbale for COPR</title>
+    <link href="https://wslutiliti.es/blog/2022/03/21/wslu-canary-copr/"/>
+    <id>https://wslutiliti.es/blog/2022/03/21/wslu-canary-copr/</id>
+    <published>2022-03-21T12:27:17.000Z</published>
+    <updated>2022-03-21T07:03:35.608Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;After several tests, as part of the CI&amp;#x2F;CD package deployment experiments, wslu Canary Build is now available for COPR!&lt;/p&gt;
+&lt;p&gt;you</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>wslu 3.2.4 LTS (finally) released!</title>
     <link href="https://wslutiliti.es/blog/2022/03/19/release-wslu-3-2-4/"/>
     <id>https://wslutiliti.es/blog/2022/03/19/release-wslu-3-2-4/</id>
     <published>2022-03-19T17:01:21.000Z</published>
-    <updated>2022-03-19T09:04:49.643Z</updated>
+    <updated>2022-03-21T07:03:35.608Z</updated>
     
     
       
@@ -42,7 +64,7 @@
     <link href="https://wslutiliti.es/blog/2021/12/01/brand-new-arch-linux-server/"/>
     <id>https://wslutiliti.es/blog/2021/12/01/brand-new-arch-linux-server/</id>
     <published>2021-12-01T16:40:32.000Z</published>
-    <updated>2022-03-19T09:04:49.643Z</updated>
+    <updated>2022-03-21T07:03:35.604Z</updated>
     
     
       
@@ -63,7 +85,7 @@
     <link href="https://wslutiliti.es/blog/2021/12/01/new-blog-for-wslutilities/"/>
     <id>https://wslutiliti.es/blog/2021/12/01/new-blog-for-wslutilities/</id>
     <published>2021-12-01T16:31:50.000Z</published>
-    <updated>2022-03-19T09:04:49.643Z</updated>
+    <updated>2022-03-21T07:03:35.604Z</updated>
     
     
       
