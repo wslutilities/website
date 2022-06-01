@@ -26,11 +26,20 @@ body {
 #content {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	opacity: 0.9;
-	background-color: #282a36;
+	-webkit-backdrop-filter: blur(10px);
+    	backdrop-filter: blur(10px);
+	background-color: #282a3699;
 	padding: 8px;
-	border: 5px solid #282a36;
+	border: 5px solid #282a3600;
 	font-size: 14px;
+}
+
+@-moz-document url-prefix() { 
+	#content {
+		opacity: 0.9;
+		background-color: #282a36 !important;
+		border: 5px solid #282a36 !important;
+	}
 }
 
 a {
