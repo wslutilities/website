@@ -156,6 +156,10 @@ a:hover {
 	background: transparent;
 }
 
+.ui-btn.close {
+	border-top-right-radius: 10px;
+}
+
 .ui-btn:hover {
 	background: rgba(255, 255, 255, .1);
 }
