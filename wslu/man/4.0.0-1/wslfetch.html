@@ -1,0 +1,184 @@
+<!-- Creator     : groff version 1.22.4 -->
+<!-- CreationDate: Sat Aug 27 10:28:17 2022 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>WSLFETCH</title>
+
+</head>
+<body>
+
+<h1 align="center">WSLFETCH</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#CONFIGURATION">CONFIGURATION</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+<a href="#REPORTING BUGS">REPORTING BUGS</a><br>
+<a href="#COPYRIGHT">COPYRIGHT</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>wslfetch</b>
+- Component of WSL Utilities</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>wslfetch</b>
+[<b>-hvcg</b>] [<b>-t</b> <i>THEME</i>] [<b>-o</b>
+<i>OPTIONS</i>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This is a WSL
+Screenshot Information Tool to print information in a
+elegant way.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>-h,
+--help</b></p>
+
+<p style="margin-left:22%;">print a simple help.</p>
+
+<p style="margin-left:11%;"><b>-v, --version</b></p>
+
+<p style="margin-left:22%;">print current version.</p>
+
+<p style="margin-left:11%;"><b>-c, --colorbar</b></p>
+
+<p style="margin-left:22%;">add a colorbar to the printed
+information. This can also be set with the configuration
+<i>WSLFETCH_COLORBAR</i>.</p>
+
+<p style="margin-left:11%;"><b>-g, --generic</b></p>
+
+<p style="margin-left:22%;">Force to print information with
+generic WSL logo.</p>
+
+<p style="margin-left:11%;"><b>-t, --theme</b>
+<i>THEME</i></p>
+
+<p style="margin-left:22%;">set a cutom theme from the file
+<i>THEME</i>. This can also be set with the configuration
+<i>WSLFETCH_THEME_PATH</i>.</p>
+
+<p style="margin-left:11%;"><b>-o, --options</b>
+<i>OPTIONS</i></p>
+
+<p style="margin-left:22%;">set custom options from the
+file <i>OPTIONS</i>. Please refer to the
+WSLFETCH_INFO_SECTION in the CONFIGURATION section for more
+information.</p>
+
+<h2>CONFIGURATION
+<a name="CONFIGURATION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>WSLFETCH_INFO_SECTION</b></p>
+
+<p style="margin-left:22%;">the sections of info from
+wslsys to show in wslfetch. the following are all the
+available options:</p>
+
+<p style="margin-left:28%;">windows-install-date <br>
+windows-rel-branch <br>
+windows-build <br>
+windows-full-build <br>
+display-scaling <br>
+windows-locale <br>
+windows-theme <br>
+windows-uptime <br>
+wsl-uptime <br>
+wsl-release <br>
+wsl-kernel <br>
+wsl-package-count <br>
+wsl-ip</p>
+
+<p style="margin-left:11%;">&acute;wsl-version&acute; will
+be always ignored since it is builtin in wslfetch. The
+default value is
+&quot;windows-build,windows-rel-branch,wsl-release,wsl-kernel,windows-uptime&quot;.
+<b><br>
+WSLFETCH_THEME_PATH</b></p>
+
+<p style="margin-left:22%;">This allows you to use your own
+customized theme.</p>
+
+<p style="margin-left:11%;"><b>WSLFETCH_COLORBAR</b></p>
+
+<p style="margin-left:22%;">whether you want to display
+colorbar in wslfetch. This will override `-c, --colorbar`
+param.</p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Created by
+Patrick Wu &lt;me@patrickwu.space&gt;</p>
+
+<h2>REPORTING BUGS
+<a name="REPORTING BUGS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Report bugs to
+&lt;https://github.com/wslutilities/wslu/issues&gt;; For
+Ubuntu specific/related bugs, report to
+&lt;https://bugs.launchpad.net/ubuntu/+source/wslu&gt;.</p>
+
+<h2>COPYRIGHT
+<a name="COPYRIGHT"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This is free
+software; you can redistribute it and/or modify it under the
+terms of the GNU GPL version 3 or (at your option) any later
+version. There is NO warranty; not even MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">wslsys(1),
+wslu(7)</p>
+<hr>
+</body>
+</html>
