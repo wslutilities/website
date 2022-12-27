@@ -1,0 +1,327 @@
+<!-- Creator     : groff version 1.22.4 -->
+<!-- CreationDate: Tue Dec 27 02:43:47 2022 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>WSLU</title>
+
+</head>
+<body>
+
+<h1 align="center">WSLU</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#AVAILABLE COMMANDS">AVAILABLE COMMANDS</a><br>
+<a href="#SUPPORTED DISTRIBUTION">SUPPORTED DISTRIBUTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#CONFIGURATION">CONFIGURATION</a><br>
+<a href="#EXIT STATUS">EXIT STATUS</a><br>
+<a href="#BUG">BUG</a><br>
+<a href="#COPYRIGHT">COPYRIGHT</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>wslu</b> A
+collection of utilities for the Linux Subsystem for
+Windows</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This is a
+collection of utilities for the Linux Subsystem for Windows
+(WSL), such as converting Linux paths to Windows paths or
+creating Linux application shortcuts on the Windows
+Desktop.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Requires
+Windows 10 Creators Update and higher.</p>
+
+<h2>AVAILABLE COMMANDS
+<a name="AVAILABLE COMMANDS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">wslusc, wslsys,
+wslfetch, wslvar, wslview(wview/wslstart/wstart),
+wslupath(deprecated), wslact, wslclip, wslgsu</p>
+
+<p style="margin-left:11%; margin-top: 1em">check each
+manpage to see the detailed usage.</p>
+
+<h2>SUPPORTED DISTRIBUTION
+<a name="SUPPORTED DISTRIBUTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">- Debian
+GNU/Linux <br>
+- Kali Linux <br>
+- OpenSUSE Leap 42, 12.0 and 15.0 <br>
+- SUSE Linux Enterprise Server 12 and 15 <br>
+- Ubuntu Latest, 16.04 LTS, 18.04 LTS and 20.04 LTS <br>
+- Pengwin (Formerly WLinux)</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>Community
+Supported Distro</b> <br>
+- Arch Linux via ArchWSL
+&lt;https://github.com/yuk7/ArchWSL&gt; <br>
+- Alpine Linux via AlpineWSL
+&lt;https://github.com/yuk7/AlpineWSL&gt; or Alpine WSL
+&lt;https://www.microsoft.com/store/productId/9P804CRF0395&gt;
+<br>
+- Scientific Linux, Oracle Linux* or RedHat Enterprise
+Linux** via Pengwin Enterprise (Formerly WLinux Enterprise)
+&lt;https://www.microsoft.com/store/productId/9N8LP0X93VCP&gt;
+<br>
+- Fedora via Fedora Remix for WSL
+&lt;https://github.com/WhitewaterFoundry/WSLFedoraRemix&gt;
+<br>
+- Gentoo Linux via GentooWSL
+&lt;https://github.com/ThatWeirdAndrew/GentooWSL&gt; <br>
+- Void Linux via VoidWSL
+&lt;https://github.com/am11/VoidWSL&gt; <br>
+- Clear Linux via ClearWSL
+&lt;https://github.com/wight554/ClearWSL&gt;</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>*: Will
+support in the future. <br>
+**: you need to request to using RHEL from Pengwin team and
+have a license of RHEL of your own.</b></p>
+
+<p style="margin-left:11%; margin-top: 1em">&gt; Legacy
+Ubuntu is no longer supported.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">All WSL
+Utilities command shared a common header. the following
+option are available to all commands. <b><br>
+--debug</b></p>
+
+<p style="margin-left:22%;">Entering debug mode.</p>
+
+<p style="margin-left:11%;"><b>--verbose</b></p>
+
+<p style="margin-left:22%;">Entering verbose mode.</p>
+
+<h2>CONFIGURATION
+<a name="CONFIGURATION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The defualt
+configuration is stored in /usr/share/wslu/conf. You can
+<br>
+override the default configuration in
+&acute;/etc/wslu/conf&acute;, <br>
+&acute;/etc/wslu/custom.conf&acute;,
+&acute;$HOME/.config/wslu/conf&acute;, or
+&acute;$HOME/.wslurc&acute;. <br>
+They will be read in the direction they are listed.</p>
+
+<h2>EXIT STATUS
+<a name="EXIT STATUS"></a>
+</h2>
+
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p style="margin-top: 1em"><b>1</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p style="margin-top: 1em">general error/unknown error.</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>20</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>input is empty or invalid.</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>21</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>input is empty.</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>22</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>input is invalid.</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>30</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>file do not exist.</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>31</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>folder do not exist.</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>32</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>feature not implemented.</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>33</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>required component do not exist.</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>34</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>unsupported feature (for a distro)</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>35</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>unsupported feature (for your Windows 10 build)</p></td>
+<td width="6%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>40</b></p></td>
+<td width="8%"></td>
+<td width="72%">
+
+
+<p>Unknown system input.</p></td>
+<td width="6%">
+</td></tr>
+</table>
+
+<h2>BUG
+<a name="BUG"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Report bugs to
+&lt;https://github.com/wslutilities/wslu/issues&gt;; For
+Ubuntu specific bugs, report to
+&lt;https://bugs.launchpad.net/ubuntu/+source/wslu&gt;.</p>
+
+<h2>COPYRIGHT
+<a name="COPYRIGHT"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This is free
+software; you can redistribute it and/or modify it under the
+terms of the GNU GPL version 3 or (at your option) any later
+version. There is NO warranty; not even MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Logo of WSL
+Utilities and wslusc icons is licensed under CC BY 4.0
+International License.</p>
+
+<p style="margin-left:11%; margin-top: 1em">For third-party
+license, please refer to
+&lt;https://wslutiliti.es/wslu/licenses.html&gt;.</p>
+<hr>
+</body>
+</html>

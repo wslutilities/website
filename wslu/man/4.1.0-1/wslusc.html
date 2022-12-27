@@ -1,0 +1,188 @@
+<!-- Creator     : groff version 1.22.4 -->
+<!-- CreationDate: Tue Dec 27 02:43:47 2022 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>WSLUSC</title>
+
+</head>
+<body>
+
+<h1 align="center">WSLUSC</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#CONFIGURATION">CONFIGURATION</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+<a href="#REPORTING BUGS">REPORTING BUGS</a><br>
+<a href="#COPYRIGHT">COPYRIGHT</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>wslusc</b> -
+Component of WSL Utilities</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>wslusc</b>
+[<b>-IsgN</b>] [<b>-d</b> <i>SHORTCUT_FILE</i>] [<b>-e</b>
+<i>PATH</i>] [<b>-n</b> <i>NAME</i>] [<b>-i</b> <i>FILE</i>]
+<i>COMMAND</i></p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>wslusc</b>
+[<b>-hv</b>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This is a WSL
+shortcut creator to create shortcut on Windows Desktop.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>-h,
+--help</b></p>
+
+<p style="margin-left:22%;">print a simple help</p>
+
+<p style="margin-left:11%;"><b>-v, --version</b></p>
+
+<p style="margin-left:22%;">print current version</p>
+
+<p style="margin-left:11%;"><b>-d, --shortcut-debug</b>
+<i>SHORTCUT_FILE</i></p>
+
+<p style="margin-left:22%;">debug the generated shortcut
+file.</p>
+
+<p style="margin-left:11%;"><b>-g, --gui</b></p>
+
+<p style="margin-left:22%;">create a shortcut that links to
+a GUI application.</p>
+
+<p style="margin-left:11%;"><b>-N, --native</b></p>
+
+<p style="margin-left:22%;">create a shortcut that uses the
+system builtin &acute;wslg.exe&acute; to launch the GUI
+application.</p>
+
+<p style="margin-left:11%;"><b>-i, --icon</b></p>
+
+<p style="margin-left:22%;">add an icon to the Windows
+Shortcut. Supports <b>.ico</b>/<b>.png</b>/<b>.svg</b>.</p>
+
+<p style="margin-left:11%;"><b>-s, --smart-icon</b></p>
+
+<p style="margin-left:22%;">This enables the smart icon
+detection. This feature requires &acute;wslpy&acute; to be
+installed.</p>
+
+<p style="margin-left:11%;"><b>-n, --name</b></p>
+
+<p style="margin-left:22%;">add a different name other than
+the command name.</p>
+
+<p style="margin-left:11%;"><b>-e, --env</b></p>
+
+<p style="margin-left:22%;">add a custom environment to
+your command. For example, if you want HiDPI support for a
+GTK app, add <b>export GDK_SCALE=2;</b> in your command,
+like this: <b>wslusc ... -e &quot;export GDK_SCALE=2;&quot;
+...</b></p>
+
+<p style="margin-left:11%;"><b>-I, --interactive</b></p>
+
+<p style="margin-left:22%;">interactive mode.</p>
+
+<h2>CONFIGURATION
+<a name="CONFIGURATION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>WSLUSC_GUITYPE</b></p>
+
+<p style="margin-left:22%;">Default GUI type. Default type
+is &rsquo;legacy&rsquo;. Use &rsquo;native&rsquo; for Native
+GUI generation (wslg.exe) by default.</p>
+
+
+<p style="margin-left:11%;"><b>WSLUSC_SMART_ICON_DETECTION</b></p>
+
+<p style="margin-left:22%;">Smart Icon Detection. Requires
+wslpy (Requires Python 3.5). default is
+&acute;false&acute;.</p>
+
+
+<p style="margin-left:11%;"><b>WSLUSC_BASE_CONVERTER_ENGINE</b></p>
+
+<p style="margin-left:22%;">Converter engine. You can
+choose either &rsquo;ffmpeg&rsquo; or
+&rsquo;imagemagick&rsquo;. By default it is
+&rsquo;imagemagick&rsquo;.</p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Created by
+Patrick Wu &lt;me@patrickwu.space&gt;</p>
+
+<h2>REPORTING BUGS
+<a name="REPORTING BUGS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Report bugs to
+&lt;https://github.com/wslutilities/wslu/issues&gt;; For
+Ubuntu specific/related bugs, report to
+&lt;https://bugs.launchpad.net/ubuntu/+source/wslu&gt;.</p>
+
+<h2>COPYRIGHT
+<a name="COPYRIGHT"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This is free
+software; you can redistribute it and/or modify it under the
+terms of the GNU GPL version 3 or (at your option) any later
+version. There is NO warranty; not even MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+ 
+<p style="margin-left:11%; margin-top: 1em">wslu(7)</p>
+<hr>
+</body>
+</html>
